@@ -1,0 +1,359 @@
+/*html, body{
+  height: 100%;
+  padding: 0;
+  margin: 0;
+  min-height: 100%;
+}*/
+
+body{
+  height: 100vh;
+background: linear-gradient(-20deg, #E91E63, #FF5722);
+}
+
+#landing{
+  position: absolute;
+    background-color: #fb1;
+    top: 50%;
+    right: 5%;
+    bottom: 5%;
+    left: -1%;
+    height: 20vh;
+    width: 97vw;
+    float: left;
+}
+
+#landing2{
+  position: absolute;
+    background-color: black;
+    opacity: 0.8;
+    top: 14%;
+    bottom: 5%;
+    left: 5%;
+    height: 80vh;
+    width: 45vw;
+    margin-left: 43vw;
+}
+
+#contact{
+  float: left;
+  height: 10vh;
+  width: 17vw;
+  position: absolute;
+  top: 82%;
+  left: 49%;
+  font-family: 'Inconsolata', monospace;
+  color: white;
+  font-size: 1vw;
+  border-style: dashed;
+  border-width: thick;
+  padding-left: 10px;
+  padding-top: 5px;
+}
+.name{
+  position: relative;
+  font-size: 4vw;
+  font-family: 'Inconsolata', monospace;
+  color: white;
+  left: 10%;
+}
+
+#name{
+  position: absolute;
+  top: 8%;
+}
+
+#intro{
+  position: absolute;
+  left: 34%;
+  top: 28%;
+  z-index: 1;
+  border-style: double;
+  border-right: 0;
+  border-width: 10px;
+}
+.intro{
+  position: relative;
+  font-size: 1.4vw;
+  font-family: 'Inconsolata', monospace;
+  color: white;
+  padding: 1%;
+}
+
+.pic{
+  position: absolute;
+  border-style: solid;
+  border-width: 10px;
+  border-bottom: 0;
+  border-color: #a55;
+  height: 65vh;
+  width: 80vw;
+  top: 17%;
+  right: 10%;
+  bottom: 10%;
+  left: 10%;
+}
+
+#portfolio {
+  height: 100vh;
+}
+
+.toportfolio {
+    font-family: 'Rozha One', serif;
+    font-size: 7vw;
+    color: black;
+    left: 30px;
+}
+
+#toportfolio {
+  position: absolute;
+  top: 70%;
+  text-align: center;
+  left: 2%;
+}
+#nav{
+  background-color: white;
+  opacity: 0.86;
+  text-align: center;
+}
+.nav{
+  font-family: 'Inconsolata', monospace;
+  font-size: 2vw;
+  text-align: center;
+  color: black;
+  display: inline-block;
+}
+#tl {
+  position: relative;
+  background-image: url("../cesoir.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat:no-repeat;
+  float: left;
+  height: 50vh;
+  width: 50vw;
+}
+
+#tr {
+  background-image: url("../packr.jpg");
+  background-size: cover;
+  background-position: center;
+  float: left;
+  width: 50%;
+  height: 50vh;
+  position: relative;
+}
+
+#bl {
+  background-color: yellow;
+  position: relative;
+  float: right;
+  width: 50%;
+  height: 50vh;
+}
+
+#br {
+  background-color: green;
+  float: left;
+  width: 50%;
+  height: 50vh;
+  position: relative;
+}
+
+.overlay{
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: white;
+}
+
+#tl:hover .overlay {
+  opacity: 0.7;
+}
+#tr:hover .overlay {
+  opacity: 0.7;
+}
+#bl:hover .overlay {
+  opacity: 0.7;
+}
+#br:hover .overlay {
+  opacity: 0.7;
+}
+
+.rotated {
+    -webkit-transform: rotate(90deg);
+    -moz-transform: rotate(90deg);
+    -o-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+    transform: rotate(90deg);
+    transition: 4s;
+    -moz-transition: 4s;
+    -ms-transition: 4s;
+    -webkit-transition: 4s;
+    -o-transition: 4s;
+}
+
+@media only screen and (max-width: 414px) {
+  #landing{
+    position: absolute;
+      background-color: #fed024;
+      top: 25%;
+      left: -3%;
+      height: 25vh;
+      width: 100vw;
+  }
+  #landing2{
+    height: 35vh;
+    top: 23%;
+    opacity: 0.7;
+  }
+  #intro{
+    position: absolute;
+    left: 30%;
+    top: 20%;
+    width: 40vw;
+    border-style: none;
+  }
+  .intro{
+    position: relative;
+    font-size: 4vw;
+    font-family: 'Inconsolata', monospace;
+    color: white;
+    padding: 0%;
+  }
+  #toportfolio {
+    position: absolute;
+    top: 78%;
+    left: 2%;
+  }
+  #name{
+    position: absolute;
+    top: 10%;
+    left: 20%;
+  }
+  #tl {
+    background-size: cover;
+    height: 50vh;
+    width: 100vw;
+  }
+  #tr {
+    background-color: blue;
+    width: 100vw;
+    height: 50vh;
+  }
+
+  #bl {
+    background-color: yellow;
+    width: 100vw;
+    height: 50vh;
+  }
+
+  #br {
+    background-color: green;
+    width: 100vw;
+    height: 50vh;
+  }
+}
+
+
+@media only screen and (min-width: 415px) and (max-width: 800px) {
+  #landing{
+    position: absolute;
+      background-color: #fed024;
+      top: 5%;
+      right: 5%;
+      bottom: 5%;
+      left: 5%;
+      height: 83vh;
+      width: 45vw;
+      float: left;
+  }
+  #landing2{
+    height: 30vh;
+    top: 28%;
+    opacity: 0.7;
+  }
+  #intro{
+    position: absolute;
+    left: 30%;
+    top: 20%;
+    width: 40vw;
+    border-style: none;
+  }
+  .intro{
+    position: relative;
+    font-size: 4vw;
+    font-family: 'Inconsolata', monospace;
+    color: white;
+    padding: 0%;
+  }
+  #tl {
+    background-size: cover;
+    height: 50vh;
+    width: 100vw;
+  }
+  #tr {
+    background-color: blue;
+    width: 100vw;
+    height: 50vh;
+  }
+
+  #bl {
+    background-color: yellow;
+    width: 100vw;
+    height: 50vh;
+  }
+
+  #br {
+    background-color: green;
+    width: 100vw;
+    height: 50vh;
+  }
+  }
+
+  @media only screen and (min-width: 800px)and (max-width: 1027px) {
+    #landing2{
+      height: 50vh;
+      top: 28%;
+      opacity: 0.7;
+    }
+    .intro{
+      position: relative;
+      font-size: 3.2vw;
+      font-family: 'Inconsolata', monospace;
+      color: white;
+    }
+    #intro{
+      position: absolute;
+      left: 20%;
+      top: 20%;
+      width: 40vw;
+    }
+    #tl {
+      background-size: cover;
+      height: 50vh;
+      width: 100vw;
+    }
+    #tr {
+      background-color: blue;
+      width: 100vw;
+      height: 50vh;
+    }
+
+    #bl {
+      background-color: yellow;
+      width: 100vw;
+      height: 50vh;
+    }
+
+    #br {
+      background-color: green;
+      width: 100vw;
+      height: 50vh;
+    }
+  }

@@ -1,0 +1,70 @@
+<div id = 'home' style="display:block;">
+
+<div id = "landing"></div>
+<div id = "name">
+  <p class="name">KOH BAO LING</p>
+</div>
+<div id = "intro">
+  <p class = "intro">
+    Hi. I am new to this. <br />
+    I would like to design great things, but I may not be as smart as you. <br />
+    Please be kind to teach me this craft. I will learn the ropes earnestly.
+    <br /><br /><br />
+    I like to take photographs too.
+  </p>
+</div>
+  <div id = "landing2"></div>
+  <div id = "contact"><p>Contact:<br /> kbaoling@gmail.com<br />(65)81986102</p></div>
+    <div class = "pic">
+    <a href="#portfolio" id="toportfolio"><p class="toportfolio">PORTFOLIO</p></a>
+    </div>
+</div>
+
+<div id = "portfolio" style="display:none;">
+  <div id ="nav">
+  <a href="#home" id="homebutton"><p class = "nav">Main</p></a>
+</div>
+  <div id="tl">
+    <div class = "overlay">
+      <p>
+        Ce Soir
+      </p>
+    </div>
+  </div>
+  <div id="tr">
+    <div class = "overlay">
+      <p>
+        Ce Soir
+      </p>
+    </div>
+  </div>
+  <div id="bl">
+    <div class = "overlay">
+      <p>
+        Ce Soir
+      </p>
+    </div>
+  </div>
+  <div id="br">
+    <div class = "overlay">
+      <p>
+        Ce Soir
+      </p>
+    </div>
+  </div>
+</div>
+
+
+
+<script>
+$(document).ready(function() {
+$("#toportfolio").click(function(e){
+$("#home").fadeOut(2000)
+$("#portfolio").fadeIn(2000)
+})
+$("#homebutton").click(function(e){
+  $("#home").fadeIn(2000)
+  $("#portfolio").fadeOut(2000)
+})
+})
+</script>
